@@ -13,39 +13,42 @@ services:
       - ./docs/db.sql:/docker-entrypoint-initdb.d/init.sql
       - postgres_data:/var/lib/postgresql/data
 
-#   backend:
-#     build:
-#       context: ./backend
-#       dockerfile: Dockerfile
-#     container_name: hocphi-backend
-#     restart: always
-#     env_file:
-#       - ./backend/.env
-#     ports:
-#       - "3000:3000"
-#     volumes:
-#       - ./backend:/app
-#       - /app/node_modules
-#     command: npm run start:dev
-#     depends_on:
-#       - db
-# 
-#   frontend:
-#     build:
-#       context: ./frontend
-#       dockerfile: Dockerfile
-#     container_name: hocphi-frontend
-#     restart: always
-#     environment:
-#       - VITE_API_URL=http://localhost:3000
-#     ports:
-#       - "5173:5173"
-#     volumes:
-#       - ./frontend:/app
-#       - /app/node_modules
-#     command: npm run dev -- --host 0.0.0.0
-#     depends_on:
-#       - backend
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: hocphi-backend
+    restart: always
+    env_file:
+      - ./backend/.env
+    environment:
+      - DB_HOST=db
+      - DB_PORT=5432
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    command: npm run start:dev
+    depends_on:
+      - db
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: hocphi-frontend
+    restart: always
+    environment:
+      - VITE_API_URL=http://localhost:3000
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    command: npm run dev -- --host 0.0.0.0
+    depends_on:
+      - backend
 
 volumes:
   postgres_data:
