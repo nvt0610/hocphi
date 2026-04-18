@@ -1,0 +1,404 @@
+{
+    "success": true,
+    "message": "Thao tác thành công",
+    "data": [
+        {
+            "id": "0acab75f-38bc-4836-adff-5e167a0c2f83",
+            "className": "Piano K01",
+            "description": "Lớp Piano cơ bản",
+            "monthlyFee": "1500000",
+            "createdAt": "2026-04-16T15:18:51.703Z",
+            "updatedAt": "2026-04-16T15:18:51.703Z",
+            "enrollments": [
+                {
+                    "id": "ca0d0631-b71d-4c52-ba56-feb4c83b560a",
+                    "studentId": "12c3c842-f761-4a9e-9e4f-6d84995715ae",
+                    "classId": "0acab75f-38bc-4836-adff-5e167a0c2f83",
+                    "status": "ACTIVE",
+                    "joinedAt": "2026-04-16T15:18:51.715Z",
+                    "student": {
+                        "id": "12c3c842-f761-4a9e-9e4f-6d84995715ae",
+                        "studentCode": "SV002",
+                        "fullName": "Trần Thị Bình",
+                        "gender": "Nữ",
+                        "dateOfBirth": null,
+                        "address": null,
+                        "phoneNumber": "0901112223",
+                        "createdAt": "2026-04-16T15:18:51.712Z",
+                        "updatedAt": "2026-04-16T15:18:51.712Z",
+                        "tuitionRecords": [
+                            {
+                                "id": "3fbc88c1-2956-4f6f-9407-e6082cdefb90",
+                                "enrollmentId": "ca0d0631-b71d-4c52-ba56-feb4c83b560a",
+                                "studentId": "12c3c842-f761-4a9e-9e4f-6d84995715ae",
+                                "billingMonth": "2024-04",
+                                "content": "Học phí lớp Piano K01 - Tháng 04/2024",
+                                "amount": "1500000",
+                                "paymentDate": null,
+                                "status": "Unpaid",
+                                "createdAt": "2026-04-16T15:18:51.719Z",
+                                "updatedAt": "2026-04-16T15:18:51.719Z"
+                            },
+                            {
+                                "id": "aba231db-39f0-4dd3-87ab-f85ea73e69a6",
+                                "enrollmentId": "ca0d0631-b71d-4c52-ba56-feb4c83b560a",
+                                "studentId": "12c3c842-f761-4a9e-9e4f-6d84995715ae",
+                                "billingMonth": "2026-04",
+                                "content": "Học phí tháng 4/2026 - Lớp Piano K01",
+                                "amount": "1500000",
+                                "paymentDate": null,
+                                "status": "Unpaid",
+                                "createdAt": "2026-04-16T15:22:34.150Z",
+                                "updatedAt": "2026-04-16T15:22:34.150Z"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "33112ffe-5409-482e-af1d-d68b1376c172",
+                    "studentId": "c98d5ffd-c414-4523-bee9-3b3555f16484",
+                    "classId": "0acab75f-38bc-4836-adff-5e167a0c2f83",
+                    "status": "ACTIVE",
+                    "joinedAt": "2026-04-16T15:18:51.715Z",
+                    "student": {
+                        "id": "c98d5ffd-c414-4523-bee9-3b3555f16484",
+                        "studentCode": "SV001",
+                        "fullName": "Nguyễn Văn An",
+                        "gender": "Nam",
+                        "dateOfBirth": null,
+                        "address": null,
+                        "phoneNumber": "0901234567",
+                        "createdAt": "2026-04-16T15:18:51.712Z",
+                        "updatedAt": "2026-04-16T15:18:51.712Z",
+                        "tuitionRecords": [
+                            {
+                                "id": "98ee3b6e-6fcd-4b32-97d1-fb03e97e12db",
+                                "enrollmentId": "33112ffe-5409-482e-af1d-d68b1376c172",
+                                "studentId": "c98d5ffd-c414-4523-bee9-3b3555f16484",
+                                "billingMonth": "2024-04",
+                                "content": "Học phí lớp Piano K01 - Tháng 04/2024",
+                                "amount": "1500000",
+                                "paymentDate": null,
+                                "status": "Paid",
+                                "createdAt": "2026-04-16T15:18:51.719Z",
+                                "updatedAt": "2026-04-16T15:18:51.719Z"
+                            },
+                            {
+                                "id": "cf15ddcf-82ab-4fbf-93af-e20614f2b400",
+                                "enrollmentId": "33112ffe-5409-482e-af1d-d68b1376c172",
+                                "studentId": "c98d5ffd-c414-4523-bee9-3b3555f16484",
+                                "billingMonth": "2026-04",
+                                "content": "Học phí tháng 4/2026 - Lớp Piano K01",
+                                "amount": "1500000",
+                                "paymentDate": null,
+                                "status": "Unpaid",
+                                "createdAt": "2026-04-16T15:22:34.158Z",
+                                "updatedAt": "2026-04-16T15:22:34.158Z"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "schedules": [
+                {
+                    "id": "c37c8038-e202-4f1b-9c33-bba1e4d2bb48",
+                    "classId": "0acab75f-38bc-4836-adff-5e167a0c2f83",
+                    "dayOfWeek": 2,
+                    "startTime": "08:00:00",
+                    "endTime": "10:00:00",
+                    "createdAt": "2026-04-16T15:18:51.707Z"
+                },
+                {
+                    "id": "5f9e152d-6418-42f3-9e05-b43a4cc32495",
+                    "classId": "0acab75f-38bc-4836-adff-5e167a0c2f83",
+                    "dayOfWeek": 4,
+                    "startTime": "08:00:00",
+                    "endTime": "10:00:00",
+                    "createdAt": "2026-04-16T15:18:51.707Z"
+                }
+            ],
+            "studentCount": 2,
+            "scheduleCount": 2,
+            "paidCount": 1
+        },
+        {
+            "id": "192db861-5f89-4eac-9db4-151fedc4e96f",
+            "className": "Vocal V02",
+            "description": "Lớp Thanh nhạc nâng cao",
+            "monthlyFee": "2000000",
+            "createdAt": "2026-04-16T15:18:51.703Z",
+            "updatedAt": "2026-04-16T15:18:51.703Z",
+            "enrollments": [
+                {
+                    "id": "8f9789cd-88ae-49ce-8420-46059ddfc01d",
+                    "studentId": "854bef3d-200f-4cb2-9f6f-a82da6c6a9b5",
+                    "classId": "192db861-5f89-4eac-9db4-151fedc4e96f",
+                    "status": "ACTIVE",
+                    "joinedAt": "2026-04-16T15:18:51.715Z",
+                    "student": {
+                        "id": "854bef3d-200f-4cb2-9f6f-a82da6c6a9b5",
+                        "studentCode": "SV003",
+                        "fullName": "Lê Hoàng Nam",
+                        "gender": "Nam",
+                        "dateOfBirth": null,
+                        "address": null,
+                        "phoneNumber": "0903334445",
+                        "createdAt": "2026-04-16T15:18:51.712Z",
+                        "updatedAt": "2026-04-16T15:18:51.712Z",
+                        "tuitionRecords": [
+                            {
+                                "id": "6aa3edcf-2050-4f01-8447-3a812c7ae594",
+                                "enrollmentId": "8f9789cd-88ae-49ce-8420-46059ddfc01d",
+                                "studentId": "854bef3d-200f-4cb2-9f6f-a82da6c6a9b5",
+                                "billingMonth": "2024-04",
+                                "content": "Học phí lớp Vocal V02 - Tháng 04/2024",
+                                "amount": "2000000",
+                                "paymentDate": null,
+                                "status": "Paid",
+                                "createdAt": "2026-04-16T15:18:51.719Z",
+                                "updatedAt": "2026-04-16T15:18:51.719Z"
+                            },
+                            {
+                                "id": "4029daa0-2726-4177-a3ef-48acbe2052a6",
+                                "enrollmentId": "8f9789cd-88ae-49ce-8420-46059ddfc01d",
+                                "studentId": "854bef3d-200f-4cb2-9f6f-a82da6c6a9b5",
+                                "billingMonth": "2026-04",
+                                "content": "Học phí tháng 4/2026 - Lớp Vocal V02",
+                                "amount": "2000000",
+                                "paymentDate": null,
+                                "status": "Unpaid",
+                                "createdAt": "2026-04-16T15:22:34.162Z",
+                                "updatedAt": "2026-04-16T15:22:34.162Z"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "schedules": [
+                {
+                    "id": "f0797b64-2c0a-477c-af54-2aabcbe99d5f",
+                    "classId": "192db861-5f89-4eac-9db4-151fedc4e96f",
+                    "dayOfWeek": 3,
+                    "startTime": "14:00:00",
+                    "endTime": "16:00:00",
+                    "createdAt": "2026-04-16T15:18:51.707Z"
+                }
+            ],
+            "studentCount": 1,
+            "scheduleCount": 1,
+            "paidCount": 1
+        },
+        {
+            "id": "9cd2d2a5-5134-472f-8e50-e43afc3978ce",
+            "className": "Guitar G05",
+            "description": "Lớp Guitar đệm hát",
+            "monthlyFee": "1200000",
+            "createdAt": "2026-04-16T15:18:51.703Z",
+            "updatedAt": "2026-04-16T15:18:51.703Z",
+            "enrollments": [
+                {
+                    "id": "3f56b280-2550-494d-aceb-3ecd62a74cda",
+                    "studentId": "3709dc6d-d6ba-43cb-822f-7d69dc5401a7",
+                    "classId": "9cd2d2a5-5134-472f-8e50-e43afc3978ce",
+                    "status": "ACTIVE",
+                    "joinedAt": "2026-04-16T15:18:51.715Z",
+                    "student": {
+                        "id": "3709dc6d-d6ba-43cb-822f-7d69dc5401a7",
+                        "studentCode": "SV004",
+                        "fullName": "Phạm Minh Tuyết",
+                        "gender": "Nữ",
+                        "dateOfBirth": null,
+                        "address": null,
+                        "phoneNumber": "0905556667",
+                        "createdAt": "2026-04-16T15:18:51.712Z",
+                        "updatedAt": "2026-04-16T15:18:51.712Z",
+                        "tuitionRecords": [
+                            {
+                                "id": "09823fa5-f658-4399-85ac-3d3d83d619ca",
+                                "enrollmentId": "3f56b280-2550-494d-aceb-3ecd62a74cda",
+                                "studentId": "3709dc6d-d6ba-43cb-822f-7d69dc5401a7",
+                                "billingMonth": "2024-04",
+                                "content": "Học phí lớp Guitar G05 - Tháng 04/2024",
+                                "amount": "1200000",
+                                "paymentDate": null,
+                                "status": "Unpaid",
+                                "createdAt": "2026-04-16T15:18:51.719Z",
+                                "updatedAt": "2026-04-16T15:18:51.719Z"
+                            },
+                            {
+                                "id": "141bffe5-820f-4ca4-9a2f-1fb13d7f3941",
+                                "enrollmentId": "3f56b280-2550-494d-aceb-3ecd62a74cda",
+                                "studentId": "3709dc6d-d6ba-43cb-822f-7d69dc5401a7",
+                                "billingMonth": "2026-04",
+                                "content": "Học phí tháng 4/2026 - Lớp Guitar G05",
+                                "amount": "1200000",
+                                "paymentDate": null,
+                                "status": "Unpaid",
+                                "createdAt": "2026-04-16T15:22:34.167Z",
+                                "updatedAt": "2026-04-16T15:22:34.167Z"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "schedules": [
+                {
+                    "id": "f375621e-1be5-4301-82fc-1e4f912d13a3",
+                    "classId": "9cd2d2a5-5134-472f-8e50-e43afc3978ce",
+                    "dayOfWeek": 7,
+                    "startTime": "18:30:00",
+                    "endTime": "20:30:00",
+                    "createdAt": "2026-04-16T15:18:51.707Z"
+                }
+            ],
+            "studentCount": 1,
+            "scheduleCount": 1,
+            "paidCount": 0
+        },
+        {
+            "id": "79a8b35e-f79d-476c-b1af-0778705ff109",
+            "className": "Lớp Test",
+            "description": "Con CAC",
+            "monthlyFee": "500000",
+            "createdAt": "2026-04-17T16:03:56.870Z",
+            "updatedAt": "2026-04-17T16:03:56.870Z",
+            "enrollments": [
+                {
+                    "id": "135c79d1-7e7f-4c3e-afb7-8b7da6b36199",
+                    "studentId": "12c3c842-f761-4a9e-9e4f-6d84995715ae",
+                    "classId": "79a8b35e-f79d-476c-b1af-0778705ff109",
+                    "status": "ACTIVE",
+                    "joinedAt": "2026-04-17T16:03:56.870Z",
+                    "student": {
+                        "id": "12c3c842-f761-4a9e-9e4f-6d84995715ae",
+                        "studentCode": "SV002",
+                        "fullName": "Trần Thị Bình",
+                        "gender": "Nữ",
+                        "dateOfBirth": null,
+                        "address": null,
+                        "phoneNumber": "0901112223",
+                        "createdAt": "2026-04-16T15:18:51.712Z",
+                        "updatedAt": "2026-04-16T15:18:51.712Z",
+                        "tuitionRecords": [
+                            {
+                                "id": "3fbc88c1-2956-4f6f-9407-e6082cdefb90",
+                                "enrollmentId": "ca0d0631-b71d-4c52-ba56-feb4c83b560a",
+                                "studentId": "12c3c842-f761-4a9e-9e4f-6d84995715ae",
+                                "billingMonth": "2024-04",
+                                "content": "Học phí lớp Piano K01 - Tháng 04/2024",
+                                "amount": "1500000",
+                                "paymentDate": null,
+                                "status": "Unpaid",
+                                "createdAt": "2026-04-16T15:18:51.719Z",
+                                "updatedAt": "2026-04-16T15:18:51.719Z"
+                            },
+                            {
+                                "id": "aba231db-39f0-4dd3-87ab-f85ea73e69a6",
+                                "enrollmentId": "ca0d0631-b71d-4c52-ba56-feb4c83b560a",
+                                "studentId": "12c3c842-f761-4a9e-9e4f-6d84995715ae",
+                                "billingMonth": "2026-04",
+                                "content": "Học phí tháng 4/2026 - Lớp Piano K01",
+                                "amount": "1500000",
+                                "paymentDate": null,
+                                "status": "Unpaid",
+                                "createdAt": "2026-04-16T15:22:34.150Z",
+                                "updatedAt": "2026-04-16T15:22:34.150Z"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "31c0aa82-434c-4c07-8f0e-d20baab885fc",
+                    "studentId": "c98d5ffd-c414-4523-bee9-3b3555f16484",
+                    "classId": "79a8b35e-f79d-476c-b1af-0778705ff109",
+                    "status": "ACTIVE",
+                    "joinedAt": "2026-04-17T16:03:56.870Z",
+                    "student": {
+                        "id": "c98d5ffd-c414-4523-bee9-3b3555f16484",
+                        "studentCode": "SV001",
+                        "fullName": "Nguyễn Văn An",
+                        "gender": "Nam",
+                        "dateOfBirth": null,
+                        "address": null,
+                        "phoneNumber": "0901234567",
+                        "createdAt": "2026-04-16T15:18:51.712Z",
+                        "updatedAt": "2026-04-16T15:18:51.712Z",
+                        "tuitionRecords": [
+                            {
+                                "id": "98ee3b6e-6fcd-4b32-97d1-fb03e97e12db",
+                                "enrollmentId": "33112ffe-5409-482e-af1d-d68b1376c172",
+                                "studentId": "c98d5ffd-c414-4523-bee9-3b3555f16484",
+                                "billingMonth": "2024-04",
+                                "content": "Học phí lớp Piano K01 - Tháng 04/2024",
+                                "amount": "1500000",
+                                "paymentDate": null,
+                                "status": "Paid",
+                                "createdAt": "2026-04-16T15:18:51.719Z",
+                                "updatedAt": "2026-04-16T15:18:51.719Z"
+                            },
+                            {
+                                "id": "cf15ddcf-82ab-4fbf-93af-e20614f2b400",
+                                "enrollmentId": "33112ffe-5409-482e-af1d-d68b1376c172",
+                                "studentId": "c98d5ffd-c414-4523-bee9-3b3555f16484",
+                                "billingMonth": "2026-04",
+                                "content": "Học phí tháng 4/2026 - Lớp Piano K01",
+                                "amount": "1500000",
+                                "paymentDate": null,
+                                "status": "Unpaid",
+                                "createdAt": "2026-04-16T15:22:34.158Z",
+                                "updatedAt": "2026-04-16T15:22:34.158Z"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "schedules": [
+                {
+                    "id": "fbb26768-cc73-4b43-86d8-3b32892e58f5",
+                    "classId": "79a8b35e-f79d-476c-b1af-0778705ff109",
+                    "dayOfWeek": 2,
+                    "startTime": "08:00:00",
+                    "endTime": "09:30:00",
+                    "createdAt": "2026-04-17T16:03:56.870Z"
+                }
+            ],
+            "studentCount": 2,
+            "scheduleCount": 1,
+            "paidCount": 1
+        },
+        {
+            "id": "c95eb83d-3044-45ea-b598-e6ebbaf737e0",
+            "className": "Drawing A01",
+            "description": "Lớp Vẽ màu nước",
+            "monthlyFee": "800000",
+            "createdAt": "2026-04-16T15:18:51.703Z",
+            "updatedAt": "2026-04-16T15:18:51.703Z",
+            "enrollments": [],
+            "schedules": [],
+            "studentCount": 0,
+            "scheduleCount": 0,
+            "paidCount": 0
+        },
+        {
+            "id": "aecdf8ad-bb92-4ee8-903d-6805d6019cdf",
+            "className": "Violin S03",
+            "description": "Lớp Violin cổ điển",
+            "monthlyFee": "2500000",
+            "createdAt": "2026-04-16T15:18:51.703Z",
+            "updatedAt": "2026-04-16T15:18:51.703Z",
+            "enrollments": [],
+            "schedules": [],
+            "studentCount": 0,
+            "scheduleCount": 0,
+            "paidCount": 0
+        }
+    ],
+    "meta": {
+        "itemCount": 6,
+        "totalItems": 6,
+        "itemsPerPage": 10,
+        "totalPages": 1,
+        "currentPage": 1
+    },
+    "timestamp": "2026-04-17T16:24:35.081Z"
+}
