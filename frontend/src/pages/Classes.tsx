@@ -27,7 +27,7 @@ const Classes: React.FC = () => {
    const navigate = useNavigate();
   const toast = useToast();
   const [classes, setClasses] = useState<ExtendedClassItem[]>([]);
-  const [loading, setLoading] = useState(true);
+
   const [searchTerm, setSearchTerm] = useState('');
   const [page, setPage] = useState(1);
   const [meta, setMeta] = useState<PaginationMeta | null>(null);
@@ -42,7 +42,6 @@ const Classes: React.FC = () => {
   }, [searchTerm, page]);
 
   const fetchClasses = async (search?: string, currentPage: number = 1) => {
-    setLoading(true);
     try {
       const res = await classService.getAll({ 
         search,
@@ -57,8 +56,6 @@ const Classes: React.FC = () => {
     } catch (error) {
       toast.error('Không thể tải danh sách lớp học');
       console.error('Failed to fetch classes', error);
-    } finally {
-      setLoading(false);
     }
   };
 
@@ -183,7 +180,7 @@ const Classes: React.FC = () => {
                       </td>
                     </motion.tr>
                   ))}
-                  {classes.length === 0 && !loading && (
+                  {classes.length === 0 && (
                     <tr>
                       <td colSpan={6} className="py-20 text-center">
                         <span className="text-[12px] font-black text-zinc-300 uppercase tracking-[0.2em]">Không tìm thấy lớp học nào</span>

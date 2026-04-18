@@ -27,7 +27,7 @@ const Students: React.FC = () => {
   const navigate = useNavigate();
   const toast = useToast();
   const [students, setStudents] = useState<StudentData[]>([]);
-  const [loading, setLoading] = useState(true);
+
   const [searchTerm, setSearchTerm] = useState('');
   const [page, setPage] = useState(1);
   const [meta, setMeta] = useState<PaginationMeta | null>(null);
@@ -41,7 +41,6 @@ const Students: React.FC = () => {
   }, [searchTerm, page]);
 
   const fetchStudents = async (search?: string, currentPage: number = 1) => {
-    setLoading(true);
     try {
       const res = await studentService.getAll({ 
         search,
@@ -50,13 +49,11 @@ const Students: React.FC = () => {
         include: 'enrollments'
       });
       if (res.success) {
-        setStudents(res.data);
+        setStudents(res.data as unknown as StudentData[]);
         setMeta(res.meta || null);
       }
     } catch (error) {
       console.error('Failed to fetch students', error);
-    } finally {
-      setLoading(false);
     }
   };
 
@@ -172,7 +169,7 @@ const Students: React.FC = () => {
                       </td>
                     </motion.tr>
                   ))}
-                  {students.length === 0 && !loading && (
+                  {students.length === 0 && (
                     <tr>
                       <td colSpan={4} className="py-20 text-center">
                         <span className="text-[12px] font-black text-zinc-300 uppercase tracking-[0.2em]">Không tìm thấy học sinh nào</span>

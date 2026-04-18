@@ -8,10 +8,15 @@ Máy tính của bạn cần cài đặt sẵn **Docker Desktop**.
 ## 2. Các bước khởi chạy
 1. Mở thư mục dự án này trên máy tính.
 2. Mở cửa sổ dòng lệnh (Terminal hoặc CMD) tại đây.
-3. Gõ lệnh duy nhất sau rồi ấn Enter:
-   ```bash
-   docker compose up --build -d
-   ```
+3. Gõ lệnh để bắt đầu:
+   *   **Lần đầu tiên hoặc khi có cập nhật code mới:**
+       ```bash
+       docker compose up --build -d
+       ```
+   *   **Những lần sau (Khởi động nhanh):**
+       ```bash
+       docker compose up -d
+       ```
 4. Chờ một lát để hệ thống tự động thiết lập mọi thứ.
 
 ## 3. Cách truy cập

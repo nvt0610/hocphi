@@ -43,7 +43,6 @@ const ConfirmDialog: React.FC<ConfirmDialogProps> = ({
         <>
           <Button 
             onClick={onClose}
-            variant="ghost"
             disabled={isLoading}
             className="flex-1 bg-zinc-100 hover:bg-zinc-200 text-zinc-600 h-[56px] rounded-2xl"
           >

@@ -8,6 +8,8 @@ export interface ClassItem {
   paidCount?: number;
   createdAt: string;
   updatedAt: string;
+  schedules?: any[];
+  enrollments?: any[];
 }
 
 export interface CreateClassRequest {

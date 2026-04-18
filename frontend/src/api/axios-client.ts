@@ -1,4 +1,4 @@
-import axios, { AxiosError, type AxiosResponse } from 'axios';
+import axios, { AxiosError } from 'axios';
 import type { ApiResponse } from '../types/api';
 
 const axiosClient = axios.create({
@@ -21,7 +21,7 @@ axiosClient.interceptors.request.use((config) => {
 
 // Response Interceptor: Bóc tách dữ liệu và xử lý lỗi tập trung
 axiosClient.interceptors.response.use(
-  (response: AxiosResponse<ApiResponse>) => {
+  (response) => {
     // Trả về toàn bộ ApiResponse (bao gồm data và meta)
     return response.data;
   },

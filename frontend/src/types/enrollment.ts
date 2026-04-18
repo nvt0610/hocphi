@@ -1,5 +1,5 @@
-import { Student } from './student';
-import { ClassItem } from './class';
+import type { Student } from './student';
+import type { ClassItem } from './class';
 
 export interface Enrollment {
   id: string;

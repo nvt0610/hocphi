@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Eye, EyeOff } from 'lucide-react';
-import { motion } from 'framer-motion';
+
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   type?: string;

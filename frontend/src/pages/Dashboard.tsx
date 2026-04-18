@@ -20,7 +20,7 @@ interface Schedule {
 
 const Dashboard: React.FC = () => {
   const [schedules, setSchedules] = useState<Schedule[]>([]);
-  const [loading, setLoading] = useState(true);
+
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [showDatePicker, setShowDatePicker] = useState(false);
   const datePickerRef = useRef<HTMLDivElement>(null);
@@ -70,8 +70,6 @@ const Dashboard: React.FC = () => {
     } catch (error) {
       console.error('Failed to fetch schedules', error);
       setSchedules([]);
-    } finally {
-      setLoading(false);
     }
   };
 

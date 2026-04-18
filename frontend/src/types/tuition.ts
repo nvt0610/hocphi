@@ -1,4 +1,4 @@
-import { Student } from './student';
+import type { Student } from './student';
 
 export interface TuitionRecord {
   id: string;
@@ -25,4 +25,5 @@ export interface CreateTuitionRequest {
 
 export interface UpdateTuitionStatusRequest {
   status: 'Paid' | 'Unpaid';
+  paymentDate?: string;
 }

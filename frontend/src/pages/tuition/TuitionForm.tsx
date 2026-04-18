@@ -31,8 +31,7 @@ const TuitionForm: React.FC = () => {
     paymentDate: ''
   });
 
-  // Lưu lại trạng thái ban đầu để kiểm tra quy tắc "chỉ sửa nội dung"
-  const [originalStatus, setOriginalStatus] = useState<string>('Unpaid');
+
 
   useEffect(() => {
     fetchStudents();
@@ -62,7 +61,6 @@ const TuitionForm: React.FC = () => {
           status: res.data.status as 'Paid' | 'Unpaid',
           paymentDate: res.data.paymentDate || ''
         });
-        setOriginalStatus(res.data.status);
       }
     } catch (error) {
       toast.error('Không thể lấy thông tin biên lai');
@@ -85,7 +83,7 @@ const TuitionForm: React.FC = () => {
         ...formData,
         amount: Number(formData.amount),
         // Nếu chuyển sang Paid, đảm bảo có paymentDate
-        paymentDate: formData.status === 'Paid' ? (formData.paymentDate || new Date().toISOString()) : null
+        paymentDate: formData.status === 'Paid' ? (formData.paymentDate || new Date().toISOString()) : undefined
       };
 
       const res = isEdit 
@@ -136,7 +134,7 @@ const TuitionForm: React.FC = () => {
                   >
                     <option value="">Chọn học sinh...</option>
                     {students.map((s) => (
-                      <option key={s.id} value={s.id}>{s.fullName} - {s.studentCode}</option>
+                      <option key={s.id} value={s.id}>{s.fullName} - {s.phoneNumber}</option>
                     ))}
                   </select>
                 </div>
