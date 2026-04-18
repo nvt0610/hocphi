@@ -26,10 +26,6 @@ services:
       - DB_PORT=5432
     ports:
       - "3000:3000"
-    volumes:
-      - ./backend:/app
-      - /app/node_modules
-    command: npm run start:dev
     depends_on:
       - db
 
@@ -42,11 +38,7 @@ services:
     environment:
       - VITE_API_URL=http://localhost:3000
     ports:
-      - "5173:5173"
-    volumes:
-      - ./frontend:/app
-      - /app/node_modules
-    command: npm run dev -- --host 0.0.0.0
+      - "5173:80"
     depends_on:
       - backend
 
